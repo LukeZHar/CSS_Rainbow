@@ -1,0 +1,34 @@
+:root {
+    --border-width: 100px;
+    --grid-width: 200px;
+}
+
+body {
+    display: grid;
+    grid-template-columns: repeat(6, var(--grid-width));
+    grid-template-rows: repeat(6, var(--grid-width));
+}
+
+#one {
+    border: var(--border-width) solid red;
+    background-color: orange;
+    grid-row: 1 / -1;
+    grid-column: 1 / -1;
+    border-radius: 50%;
+}
+
+.two {
+    border: var(--border-width) solid yellow;
+    background-color: green;
+    grid-row: 2 / -2;
+    grid-column: 2 / -2;
+    border-radius: 50%;
+}
+
+.three {
+    border: var(--border-width) solid royalblue;
+    background-color: rebeccapurple;
+    grid-row: 3 / -3;
+    grid-column: 3 / -3;
+    border-radius: 50%;
+}
